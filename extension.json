@@ -1,0 +1,22 @@
+{
+	"name": "SMWFormatSearchResult",
+	"version": "0.1 20190417",
+	"author": [
+		"Matthias Drobny"
+	],
+	"url": "https://www.mediawiki.org/wiki/Extension:SMWFormatSearchResult",
+	"license-name": "GPL-2.0+",
+	"requires": {
+		"MediaWiki": ">= 1.26.0",
+		"extensions": {
+			"SemanticMediaWiki": "*"
+		}
+	},
+	"Hooks": {
+		"ShowSearchHitTitle"			: "SMWFormatSearchResultHooks::onShowSearchHitTitle"
+	},
+	"AutoloadClasses": {
+		"SMWFormatSearchResultHooks":	"SMWFormatSearchResultHooks.php"
+	},
+	"manifest_version": 1
+}
